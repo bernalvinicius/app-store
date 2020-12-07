@@ -5,19 +5,19 @@ const Apps = () => {
   return (
     <ul>
       <li>
-        <div class="app-item">
-          <div class="box-info">
-            <div class="box-info--content">
-              <div class="description">
+        <div className="app-item">
+          <div className="box-info">
+            <div className="box-info--content">
+              <div className="description">
                 <h1>Voice Report</h1>
                 <p>Calls reporting and analytics of your calls.</p>
               </div>
-              <div class="tags">
+              <div className="tags">
                 <span>Voice Analytics</span> / <span>Reporting</span> /{" "}
                 <span>Optimization</span>
               </div>
             </div>
-            <div class="box-info--footer">
+            <div className="box-info--footer">
               <ul>
                 <li>
                   <span>Trial</span>{" "}
@@ -37,19 +37,19 @@ const Apps = () => {
         </div>
       </li>
       <li>
-        <div class="app-item">
-          <div class="box-info">
-            <div class="box-info--content">
-              <div class="description">
+        <div className="app-item">
+          <div className="box-info">
+            <div className="box-info--content">
+              <div className="description">
                 <h1>Voice Report</h1>
                 <p>Calls reporting and analytics of your calls.</p>
               </div>
-              <div class="tags">
+              <div className="tags">
                 <span>Voice Analytics</span> / <span>Reporting</span> /{" "}
                 <span>Optimization</span>
               </div>
             </div>
-            <div class="box-info--footer">
+            <div className="box-info--footer">
               <ul>
                 <li>
                   <span>Trial</span>{" "}
@@ -69,19 +69,19 @@ const Apps = () => {
         </div>
       </li>
       <li>
-        <div class="app-item">
-          <div class="box-info">
-            <div class="box-info--content">
-              <div class="description">
+        <div className="app-item">
+          <div className="box-info">
+            <div className="box-info--content">
+              <div className="description">
                 <h1>Voice Report</h1>
                 <p>Calls reporting and analytics of your calls.</p>
               </div>
-              <div class="tags">
+              <div className="tags">
                 <span>Voice Analytics</span> / <span>Reporting</span> /{" "}
                 <span>Optimization</span>
               </div>
             </div>
-            <div class="box-info--footer">
+            <div className="box-info--footer">
               <ul>
                 <li>
                   <span>Trial</span>{" "}

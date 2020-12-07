@@ -12,9 +12,48 @@
 }
 
 .nav-categories {
+  /* configuração < 1024px */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 75%;
+  padding-top: 3rem;
   text-align: left;
-  flex: 0;
-  order: 1;
+  z-index: -1;
+  background-color: #f4f7f6;
+
+  &.open {
+    position: relative;
+    top: unset;
+    left: unset;
+    display: block;
+    width: 75%;
+    flex: 0;
+    order: 1;
+    padding-top: 1rem;
+    z-index: 0;
+    text-align: left;
+  }
+
+  /* configuração >= 768px */
+  @media (min-width: 64em) {
+    width: 40%;
+  }
+
+  /* configuração >= 1024px */
+  @media (min-width: 64em) {
+    position: relative;
+    top: unset;
+    left: unset;
+    display: block;
+    width: 100%;
+    flex: 0;
+    order: 1;
+    padding-top: 1rem;
+    z-index: 0;
+    text-align: left;
+  }
 }
 
 .apps-list {

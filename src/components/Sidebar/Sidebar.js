@@ -1,11 +1,17 @@
 import React from "react";
 import "./Sidebar.scss";
+import close from "../../assets/images/close.svg";
+import PropTypes from "prop-types";
 
-const Sidebar = () => {
+const Sidebar = ({ toggleSidebar }) => {
   return (
     <>
-      <h2>Categories</h2>
-
+      <div className="header">
+        <h2>Categories</h2>
+        <div className="close" onClick={toggleSidebar}>
+          <img src={close} alt="close" />
+        </div>
+      </div>
       <ul className="nav-menu">
         <li className="active">
           <a href="/">Channels</a>
@@ -25,6 +31,10 @@ const Sidebar = () => {
       </ul>
     </>
   );
+};
+
+Sidebar.propTypes = {
+  toggleSidebar: PropTypes.func.isRequired,
 };
 
 export default Sidebar;

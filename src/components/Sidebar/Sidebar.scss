@@ -39,3 +39,17 @@ li.selected {
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
+
+.header {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media (min-width: 64em) {
+    display: none;
+  }
+}
