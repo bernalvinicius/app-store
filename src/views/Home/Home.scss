@@ -1,0 +1,25 @@
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  max-width: 1400px;
+  margin: 2rem auto;
+  border: 1px solid green;
+}
+
+.flex-container > * {
+  padding: 15px;
+  flex: 1 100%;
+}
+
+.nav-categories {
+  text-align: left;
+  flex: 0;
+  order: 1;
+}
+
+.apps-list {
+  flex: 1;
+  order: 2;
+  text-align: left;
+}

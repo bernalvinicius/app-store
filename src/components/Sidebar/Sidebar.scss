@@ -1,0 +1,41 @@
+h2 {
+  font-size: 2.125rem;
+  padding: 0 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+li.selected {
+  background-color: rgb(87, 87, 206);
+  color: #ffffff;
+}
+
+.nav-menu .active a {
+  color: #4bc3c9;
+}
+
+.nav-menu a {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  font-size: 17px;
+  font-weight: 300;
+  color: #202121;
+  cursor: pointer;
+  background: #f4f7f6;
+  border-bottom: 1px solid #e6eaea;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #ffffff;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
