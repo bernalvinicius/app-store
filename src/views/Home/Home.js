@@ -12,8 +12,6 @@ const Home = () => {
   };
 
   let opened = !open ? "closed" : "open";
-  console.log(open);
-  console.log(opened);
 
   return (
     <div className="flex-container">

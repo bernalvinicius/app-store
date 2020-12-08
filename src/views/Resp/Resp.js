@@ -10,9 +10,6 @@ const Resp = () => {
 
   let opened = !open ? "closed" : "open";
 
-  console.log("opened: ", opened);
-  console.log("open: ", open);
-
   return (
     <div className="flex-container">
       <nav className={`nav-categories ${opened}`}>
