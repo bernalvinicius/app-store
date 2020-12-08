@@ -27,11 +27,8 @@ const Sidebar = ({ toggleSidebar, activeFilter, setActiveFilter }) => {
       <ul className="nav-menu">
         {allCategories.sort().map((category) => (
           <li
-            style={{
-              backgroundColor: category ? "red" : "green",
-            }}
-            className={activeFilter === category && "active"}
             key={category}
+            className={activeFilter !== category ? "" : "active"}
             onClick={handleChange(category)}
           >
             <a href="/">{category}</a>
