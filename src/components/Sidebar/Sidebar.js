@@ -2,8 +2,20 @@ import React from "react";
 import "./Sidebar.scss";
 import close from "../../assets/images/close.svg";
 import PropTypes from "prop-types";
+import { useSelector } from "react-redux";
 
-const Sidebar = ({ toggleSidebar }) => {
+const Sidebar = ({ toggleSidebar, activeFilter, setActiveFilter }) => {
+  const data = useSelector((state) => state.apps.collections);
+
+  const allCategories = data
+    .reduce((app, category) => [...app, ...category.categories], [])
+    .filter((elem, index, self) => index === self.indexOf(elem));
+
+  const handleChange = (category) => (event) => {
+    setActiveFilter(category);
+    event.preventDefault();
+  };
+
   return (
     <>
       <div className="header">
@@ -13,21 +25,18 @@ const Sidebar = ({ toggleSidebar }) => {
         </div>
       </div>
       <ul className="nav-menu">
-        <li className="active">
-          <a href="/">Channels</a>
-        </li>
-        <li>
-          <a href="/">Dialer</a>
-        </li>
-        <li>
-          <a href="/">Optimization</a>
-        </li>
-        <li>
-          <a href="/">Reporting</a>
-        </li>
-        <li>
-          <a href="/">Voice Analytics</a>
-        </li>
+        {allCategories.sort().map((category) => (
+          <li
+            style={{
+              backgroundColor: category ? "red" : "green",
+            }}
+            className={activeFilter === category && "active"}
+            key={category}
+            onClick={handleChange(category)}
+          >
+            <a href="/">{category}</a>
+          </li>
+        ))}
       </ul>
     </>
   );
@@ -35,6 +44,8 @@ const Sidebar = ({ toggleSidebar }) => {
 
 Sidebar.propTypes = {
   toggleSidebar: PropTypes.func.isRequired,
+  activeFilter: PropTypes.string.isRequired,
+  setActiveFilter: PropTypes.func.isRequired,
 };
 
 export default Sidebar;
