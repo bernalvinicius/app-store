@@ -7,12 +7,11 @@ import Sidebar from "../../components/Sidebar";
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState("");
+  const [searchApp, setSearchApp] = useState("");
 
   const toggleSidebar = () => {
     setOpen(!open);
   };
-
-  console.log("activeFilter: ", activeFilter);
 
   let opened = !open ? "closed" : "open";
 
@@ -26,8 +25,12 @@ const Home = () => {
         />
       </div>
       <div className="apps-list">
-        <Header open={open} toggleSidebar={toggleSidebar} />
-        <Apps />
+        <Header
+          open={open}
+          toggleSidebar={toggleSidebar}
+          setSearchApp={setSearchApp}
+        />
+        <Apps activeFilter={activeFilter} searchApp={searchApp} />
       </div>
     </div>
   );
