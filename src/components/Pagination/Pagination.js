@@ -1,5 +1,4 @@
 import React from "react";
-import "./Pagination.scss";
 import PropTypes from "prop-types";
 
 const Pagination = ({ pageNumbers, handleClick, currentPage }) => {

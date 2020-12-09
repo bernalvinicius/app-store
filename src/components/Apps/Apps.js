@@ -1,5 +1,4 @@
 import React, { useState, useMemo, useEffect } from "react";
-import "./Apps.scss";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import App from "../App";

@@ -1,5 +1,4 @@
 import React from "react";
-import "./Sidebar.scss";
 import close from "../../assets/images/close.svg";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";

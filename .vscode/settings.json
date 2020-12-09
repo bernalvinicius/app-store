@@ -1,7 +1,6 @@
 {
-  "cSpell.words": [
-    "Vinicius",
-    "browserslist",
-    "testid"
-  ]
+  "cSpell.words": ["Vinicius", "browserslist", "testid"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  }
 }

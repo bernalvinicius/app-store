@@ -1,5 +1,4 @@
 import React from "react";
-import "./Header.scss";
 import PropTypes from "prop-types";
 
 const Header = ({ toggleSidebar, open, setSearchApp }) => {

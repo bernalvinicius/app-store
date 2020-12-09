@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Home.scss";
 import Apps from "../../components/Apps";
 import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
