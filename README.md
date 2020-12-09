@@ -2,7 +2,7 @@
 
 
 
-![Preview-Screens](https://raw.githubusercontent.com/bernalvinicius/app-store/master/src/assets/images/app-store.png?token=AHIQ5Y7ENRZXEUZGGCRGVUC72EWQU)
+![Preview-Screens](https://raw.githubusercontent.com/bernalvinicius/app-store/master/src/assets/images/app-store.png)
 
 
 
