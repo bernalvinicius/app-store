@@ -1,4 +1,4 @@
-# App Store - Talkdesk Challenge
+# App Store
 
 
 
@@ -14,7 +14,7 @@
 
 ## Why?
 
-This project is part of the selection process for Front-End Developer sent by Talkdesk.
+This project is to improve my knowledge.
 
 
 
